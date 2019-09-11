@@ -1,0 +1,36 @@
+.first {
+  position: absolute;
+  margin-left: 20%;
+  margin-bottom: 90%;
+  padding: 50px;
+  color: black;
+  border-style: solid;
+  border-width: 10px;
+  border-color: tan;
+}
+
+.second {
+  position: absolute;
+  margin-left: 20%;
+  margin-top: 135%;
+  padding: 50px;
+  color: black;
+  border-style: solid;
+  border-width: 10px;
+  border-color: tan;
+}
+
+.whatif {
+  position: fixed;
+  margin-top: 30%;
+  color: blue;
+  margin-left: 10px;
+}
+
+
+.lists {
+  color: black;
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 60%;
+}
