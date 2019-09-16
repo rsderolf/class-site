@@ -1,0 +1,22 @@
+div {
+  padding: 80px;
+  border-style: groove;
+  border-width: 120px;
+  border-color: pink;
+  color: teal;
+}
+
+.dashed {
+  border-style: dashed;
+  border-color: teal;
+  color: red;
+}
+
+.double {
+  border-style: double;
+  border-color: red;
+  color: black;
+  padding: 40px;
+  padding-left: 80px;
+  left: 200px;
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap');
+
+
+.main {
+  width: 80%;
+  top: 30%;
+  height:auto;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30%;
+}
+
+p {
+  display: inline;
+  font-family: Space Mono;
+  margin-right: 170px;
+  line-height: 100px;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: Space Mono;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 40px;
+
+}
+
+.bigger {
+  font-weight: 40px;
+}

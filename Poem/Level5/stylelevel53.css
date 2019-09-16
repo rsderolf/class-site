@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
+
+body {
+  margin:0px;
+  display: flex;
+
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #D61E0F;
+  -webkit-transition: .5s ease-out;
+  -moz-transition: .5s ease-out;
+  -o-transition: .5s ease-out;
+  transition: .5s ease-out;
+  font-family: Ultra;
+
+}
+
+/* PINK */
+
+
+.pink {
+  background-color: #F6CCC7;
+  font-size: 8pt;
+  line-height: 18px;
+  flex: 90%;
+}
+
+.pinktext {
+  width: 60%;
+  height: 40%;
+  text-align: center;
+}
+
+.pink:hover {
+  flex: 90%;
+  font-size: 24px;
+  line-height: 30px;
+  height: auto;
+}
+
+/* YELLOW */
+
+.yellow {
+  background-color: yellow;
+  font-size: 8px;
+  line-height: 18px;
+  flex: 5%;
+}
+
+.yellowtext {
+  width: 60%;
+  height: 40%;
+  text-align: center;
+}
+
+.yellow:hover {
+  flex:90%;
+  font-size: 24px;
+  line-height: 30px;
+  height: auto;
+}
+
+/* BLUE */
+
+.blue {
+  background-color: #BFCED5;
+  font-size: 8px;
+  line-height: 18px;
+  flex: 5%;
+
+}
+
+.bluetext {
+  width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+.blue:hover {
+  flex:90%;
+  font-size: 12px;
+  line-height: 14px;
+  height: 100vh;
+}

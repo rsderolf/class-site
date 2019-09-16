@@ -1,0 +1,36 @@
+.wide {
+  width: 300%;
+  height: 100%;
+}
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #afd9fa;
+  margin-bottom: 20%;
+  height: 25px;
+  padding: 20px;
+
+}
+
+.one {
+  padding-left: 700px;
+  top:65px;
+  background-color: yellow;
+
+
+}
+
+.two {
+  padding-left: 1400px;
+  top: 130px;
+  background-color: tan;
+
+}
+
+.three {
+  padding-left: 2100px;
+  top: 195px;
+  background-color: pink;
+}

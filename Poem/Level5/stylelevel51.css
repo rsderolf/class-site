@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand&display=swap');
+
+body {
+  height: auto;
+  animation: colorchange 50s;
+  -webkit-animation: colorchange 20s;
+  animation-iteration-count: 4;
+  animation-timing-function: ease;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes colorchange {
+   0%   {background: blue;}
+   50%  {background: purple;}
+   100% {background: blue;}
+
+ }
+
+ ul {
+   list-style-image: url('scribble.png');
+ }
+
+
+ .main {
+   width: 60%;
+   padding-top: 20%;
+   align-content: center;
+   font-family: Shrikhand;
+   font-style: normal;
+   font-weight:normal;
+   letter-spacing: 3px;
+   word-spacing: 6px;
+   color: white;
+   font-size: 36px;
+   opacity: .4;
+   margin-bottom: 200px;
+ }
+
+
+p: hover {
+  background-color: green;
+  -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
