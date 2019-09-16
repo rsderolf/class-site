@@ -42,3 +42,11 @@ body {
   margin: 0;
 
 }
+
+img {
+  width:30%;
+  position: fixed;
+  right: 20%;
+  top: 50%;
+  transform:translateY(-50%);
+}

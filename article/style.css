@@ -9,6 +9,8 @@ html, body {
   height:100%;
 }
 
+
+
 h1 {
   color: white;
   font-size: 130px;
@@ -61,6 +63,25 @@ p {
   margin-right: auto;
   width: 70%;
 }
+
+.title {
+  font-size: 18px;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  margin: 0;
+  text-align: right;
+  width: 160px;
+  padding: 8px;
+  background-color: #F3E831;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 
 li {
   font-family: 'Chivo', sans-serif;
