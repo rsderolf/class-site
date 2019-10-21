@@ -4,6 +4,10 @@
   font-family: monospace;
 }
 
+*::selection {
+  background:transparent;
+}
+
 h1 {
   z-index: 1;
   color: white;
