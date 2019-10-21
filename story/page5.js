@@ -2,6 +2,7 @@
 let x=1000;
 let y=900;
 let z=1100;
+var sizeVal;
 
 
 function setup() {
@@ -34,17 +35,24 @@ function setup() {
   // button2.mousePressed(createA('../page2/page2.html','this is a link',_blank));
   button2.mousePressed(uniHide);
 
-  apple = createImg('fruit-08.png');
-  apple.style('width', '100px');
-  apple.position(900,20);
 
-  orange = createImg('fruit-09.png');
-  orange.style('width', '100px');
-  orange.position(1000,20);
+  sizeSlider = createSlider(50, 200, 200, 1);
+  sizeSlider.position(10,10);
+  // sizeSlider.mousePressed(sizePressed);
 
-  grape = createImg('fruit-10.png');
-  grape.style('width', '100px');
-  grape.position(1100,20);
+
+
+
+  //Slider for fruit size
+
+
+
+
+  //
+  // apple.style('width', (sizeVal + 'px'));
+  // orange.style('width', sizeVal + "px");
+  // grape.style('width', sizeVal + "px");
+
 
 }
 
@@ -69,20 +77,15 @@ function resetSketch() {
   noStroke();
   var water = rect(0, windowHeight-windowHeight/2, windowWidth, windowHeight/2);
 
-
-  // sizeSlider = createSlider(50, 100, 50, 1);
-  // sizeSlider.position(10,10);
-  // sizeSlider.mousePressed(sizePressed);
-
-  // apple = createImg('fruit-08.png');
+  apple = createImg('fruit-08.png');
   // apple.style('width', '100px');
   // apple.position(900,20);
   //
-  // orange = createImg('fruit-09.png');
+  orange = createImg('fruit-09.png');
   // orange.style('width', '100px');
   // orange.position(1000,20);
   //
-  // grape = createImg('fruit-10.png');
+  grape = createImg('fruit-10.png');
   // grape.style('width', '100px');
   // grape.position(1100,20);
 
@@ -91,8 +94,19 @@ function resetSketch() {
 }
 
 
-function mousePressed() {
+function mouseClicked() {
   mousePressed = true;
+
+  orange.position(x, 20);
+  x = x + 5;
+
+
+  apple.position(y, 20);
+  y = y + 5;
+
+
+  grape.position(z, 20);
+  z = z + 5;
   // var newPosition = mouseX;
   // orange.position(newPosition,20);
 }
@@ -102,48 +116,65 @@ function mouseReleased() {
 }
 
 function draw() {
+  var sizeVal = sizeSlider.value() + 'px';
 
+  // var size = sizeVal + "px";
 
-  if (mousePressed == true) {
+    // apple = createImg('fruit-08.png');
+    apple.style('width', sizeVal);
+    apple.position(900,20);
 
+    // orange = createImg('fruit-09.png');
+    orange.style('width', sizeVal);
+    orange.position(1000,20);
 
-
-      orange.position(x, 20);
-      x = x + 5;
-
-
-      apple.position(y, 20);
-      y = y + 5;
-
-
-      grape.position(z, 20);
-      z = z + 5;
-
-  } else {
-    x=1000;
-    y=900;
-    z=1100;
-    apple.position(y,20);
-    orange.position(x,20);
-    grape.position(z,20);
-    if (mousePressed = true) {
-      draw();
-    }
-  }
-
-
-// let sizeVal = sizeSlider.value();
-//
-// apple.position(300,0);
-//
-// if (sizePressed == true) {
-//   apple.style('width', 'sizeVal');
-// }
-
-
-    //
-    // drop.show();
-    // drop.update();
-
-
+    // grape = createImg('fruit-10.png');
+    grape.style('width', sizeVal);
+    grape.position(1100,20);
 }
+
+// function draw() {
+//
+//
+//   if (mousePressed == true) {
+//
+//
+//
+//       orange.position(x, 20);
+//       x = x + 5;
+//
+//
+//       apple.position(y, 20);
+//       y = y + 5;
+//
+//
+//       grape.position(z, 20);
+//       z = z + 5;
+//
+//   } else {
+//     x=1000;
+//     y=900;
+//     z=1100;
+//     apple.position(y,20);
+//     orange.position(x,20);
+//     grape.position(z,20);
+//     // if (mousePressed = true) {
+//     //   draw();
+//     // }
+//   }
+//
+//
+// // let sizeVal = sizeSlider.value();
+// //
+// // apple.position(300,0);
+// //
+// //   apple.style('width', 'sizeVal');
+// //
+//
+//
+//     //
+//     // drop.show();
+//     // drop.update();
+//
+//
+// }
