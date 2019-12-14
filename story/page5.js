@@ -10,16 +10,15 @@ function setup() {
   resetSketch();
 
 
-  var button = createButton("reset");
+  var button = createButton("Back to Class Site");
 
   // button.mousePressed(redraw());
-  button.mousePressed(resetSketch());
-  button.position(windowWidth - 100, windowHeight - 50);
+  button.mousePressed(backSite);
+  button.position(windowWidth - 160, windowHeight - 50);
   button.style("font-family", "monospace");
-  button.size(60, 20);
+  button.size(140, 20);
   button.style("background-color", "#41418C");
   button.style("color", "white");
-
   button.style("z-index", "10");
 
 
@@ -36,11 +35,23 @@ function setup() {
   button2.mousePressed(uniHide);
 
 
+
+
   sizeSlider = createSlider(50, 200, 200, 1);
   sizeSlider.position(10,10);
   // sizeSlider.mousePressed(sizePressed);
 
-
+  apple = createImg('fruit-08.png');
+  // apple.style('width', '100px');
+  // apple.position(900,20);
+  //
+  orange = createImg('fruit-09.png');
+  // orange.style('width', '100px');
+  // orange.position(1000,20);
+  //
+  grape = createImg('fruit-10.png');
+  // grape.style('width', '100px');
+  // grape.position(1100,20);
 
 
   //Slider for fruit size
@@ -60,6 +71,10 @@ function uniHide() {
   window.open("index.html", "_self");
 }
 
+function backSite() {
+window.open("../index.html", "_self");
+}
+
 
 function resetSketch() {
 
@@ -77,17 +92,7 @@ function resetSketch() {
   noStroke();
   var water = rect(0, windowHeight-windowHeight/2, windowWidth, windowHeight/2);
 
-  apple = createImg('fruit-08.png');
-  // apple.style('width', '100px');
-  // apple.position(900,20);
-  //
-  orange = createImg('fruit-09.png');
-  // orange.style('width', '100px');
-  // orange.position(1000,20);
-  //
-  grape = createImg('fruit-10.png');
-  // grape.style('width', '100px');
-  // grape.position(1100,20);
+
 
 
 

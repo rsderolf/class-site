@@ -4,7 +4,7 @@ body {
 }
 
 .sidenav {
-  height: 100vh;
+  max-height: 100vh;
   width: auto;
   position: fixed;
   z-index: 1;
@@ -13,8 +13,8 @@ body {
   background-color: white;
   overflow-x: hidden;
   overflow-y: auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
 }
 
 .sidenav a {
@@ -27,6 +27,14 @@ body {
   color: white;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
+}
+
+.sidenav a:first-child {
+  margin-top:80px;
+}
+
+.sidenav a:last-child {
+  margin-bottom:80px;
 }
 
 
